@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love life</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- you must include this when linking css -->
+    <!-- <script src="./changeBackground.js" defer></script> -->
+</head>
+<body class="body">
+    <div>Web Dev Intro straight html</div> <!-- you also must include the class names, ids, or other identifiers -->
+    <ul>
+        <li>I</li>
+        <li>Love</li>
+        <li>Chicken</li>
+        <li>and</li>
+        <li>Rice</li>
+    </ul>
+    <img src="../images/spongebob.jpeg" alt="picture of spongebob" class="spongebob" id="spongebob">
+    <button id="clickButton">Click me!</button>
+  <p>Button clicked: <span id="clickCount">0</span> times</p>
+
+  <script>
+    let count = 0;
+
+    document.getElementById('clickButton').addEventListener('click', function() {
+        count++;
+        document.getElementById('clickCount').textContent = count;
+      });      
+  </script>
+</body>
+</html>
